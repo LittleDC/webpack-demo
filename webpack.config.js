@@ -9,6 +9,11 @@ module.exports = {
   devServer: {
     contentBase: './dist',
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: 'dynamic import',
+    }),
+  ],
   output: {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),

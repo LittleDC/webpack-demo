@@ -15,7 +15,7 @@
   \**********************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("function getComponent() {\r\n  const element = document.createElement('div');\r\n\r\n  return __webpack_require__.e(/*! import() */ \"vendors-node_modules_lodash_lodash_js\").then(__webpack_require__.t.bind(__webpack_require__, /*! lodash */ \"./node_modules/lodash/lodash.js\", 23))\r\n  .then(({default: _ }) => {\r\n    const element = document.createElement('div');\r\n\r\n    element.innerHTML = _.join(['Hello', 'webpack'], ' ');\r\n\r\n    return element;\r\n  })\r\n  .catch((error) => 'An error occurred while loading the component')\r\n}\r\n\r\ngetComponent().then((component) => {\r\n  document.body.appendChild(component);\r\n});\n\n//# sourceURL=webpack://webpack-demo/./src/index.js?");
+eval("async function getComponent() {\r\n  const element = document.createElement('div');\r\n  const { default:_ } = await __webpack_require__.e(/*! import() */ \"vendors-node_modules_lodash_lodash_js\").then(__webpack_require__.t.bind(__webpack_require__, /*! lodash */ \"./node_modules/lodash/lodash.js\", 23));\r\n\r\n  element.innerHTML = _.join(['Hello', 'webpack'], ' ');\r\n\r\n  return element;\r\n}\r\n\r\ngetComponent().then((component) => {\r\n  document.body.appendChild(component);\r\n});\n\n//# sourceURL=webpack://webpack-demo/./src/index.js?");
 
 /***/ })
 
