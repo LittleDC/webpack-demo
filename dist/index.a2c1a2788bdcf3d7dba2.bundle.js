@@ -1,0 +1,1 @@
+(self.webpackChunkwebpack_demo=self.webpackChunkwebpack_demo||[]).push([[826],{138:(e,n,c)=>{"use strict";var t=c(486),o=c.n(t);document.body.appendChild(function(){const e=document.createElement("div");return e.innerHTML=o().join(["Hello","webpack"]," "),e}())}},e=>{"use strict";e.O(0,[216],(()=>(138,e(e.s=138)))),e.O()}]);
