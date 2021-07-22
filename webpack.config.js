@@ -6,9 +6,6 @@ module.exports = {
   entry: {
     index: './src/index.js',
   },
-  devServer: {
-    contentBase: './dist',
-  },
   plugins: [
     new HtmlWebpackPlugin({
       title: 'cache',
