@@ -25,3 +25,5 @@
 7.30 tomorrow need to code!
 
 7.31 gu gu gu ,,,
+
+8.10 reboot -> Build Performance
