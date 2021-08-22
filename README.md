@@ -27,3 +27,5 @@
 7.31 gu gu gu ,,,
 
 8.10 reboot -> Build Performance
+
+8.22 init again
