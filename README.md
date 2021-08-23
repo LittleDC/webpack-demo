@@ -29,3 +29,5 @@
 8.10 reboot -> Build Performance
 
 8.22 init again
+
+8.23 goal - build a webpack full demo by myself
