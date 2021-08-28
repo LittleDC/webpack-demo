@@ -9,9 +9,9 @@ const {
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
-  entry: './src/index.js',
+  entry: './src/js/index.js',
   output: {
-    filename: 'build.js',
+    filename: 'js/build.js',
     path: resolve(__dirname, 'build')
   },
   module: {

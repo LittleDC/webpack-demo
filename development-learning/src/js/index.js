@@ -1,5 +1,5 @@
 // 这是入口文件
-import './index.less'
+import '../css/index.less'
 
 function add(x, y) {
   return x + y;
