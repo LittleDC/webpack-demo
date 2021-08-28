@@ -25,24 +25,24 @@ module.exports = {
         test: /\.css$/,
         use: ['style-loader', 'css-loader']
       },
-      {
-        test: /\.(jpg|png|gif)$/,
-        loader: 'url-loader',
-        options: {
-          limit: 8 * 1024,
-          name: '[hash:10].[ext]',
-          // 关闭es6模块化，开启commonJS模块化
-          esModule: false
-        }
-      },
+      // { // 坑坑坑
+      //   test: /\.(jpg|png|gif)$/,
+      //   loader: 'url-loader',
+      //   options: {
+      //     limit: 8 * 1024,
+      //     name: '[name]_[hash:10].[ext]',
+      //     // 关闭es6模块化，开启commonJS模块化
+      //     // esModule: false
+      //   }
+      // },
       {
         // 处理HTML中的img资源
         test: /\.html$/,
-        loader: 'html-loader'
+        loader: 'html-loader',
       },
       {
         // 处理其他资源
-        exclude: /\.(html|js|css|less|jpg|png|gif)/,
+        exclude: /\.(html|js|css|less|jpg|png|gif)$/,
         loader: 'file-loader',
         options: {
           name: '[hash:10].[ext]'
@@ -57,7 +57,7 @@ module.exports = {
     })
   ],
   devServer: {
-    contentBase: resolve(__dirname, 'build'),
+    // contentBase: resolve(__dirname, 'build'),
     compress: true,
     port: 3000,
     open: true
