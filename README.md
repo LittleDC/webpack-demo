@@ -31,3 +31,5 @@
 8.22 init again
 
 8.23 goal - build a webpack full demo by myself
+
+8.30 webpack4 done
