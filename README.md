@@ -33,3 +33,5 @@
 8.23 goal - build a webpack full demo by myself
 
 8.30 webpack4 done
+
+9.2 webpack5 nearly done
